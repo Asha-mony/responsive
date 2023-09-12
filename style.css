@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    transition: 0.5s;
+}
+
+:root {
+    --backgroundMain: #FD6E0A;
+    --pColor: #757575;
+    --mainColor: #474747;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: var(--backgroundMain);
+    border: 2px solid var(--backgroundMain);
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*------------ end of basic & common css style --------------------- */
+
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav .logo h2 {
+    font-size: 45px;
+}
+
+nav .logo h2 span {
+    color: var(--backgroundMain);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--backgroundMain);
+}
+
+.menu {
+    display: none;
+}
+
+.menu i {
+    font-size: 45px;
+
+}
+
+/* end of nav css ------------------------------- */
+
+.header {
+    background-color: #FFF8F3;
+    background-image: url(../image/header_bg.png), url(../image/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, top 25% left 1%;
+    background-size: 700px, 80px;
+}
+
+.banner {
+
+    padding: 30px 30px 0px 130px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 500px;
+}
+
+.banner-text {
+    width: 50%;
+}
+
+.profile-contact-btn {
+    background: none;
+    border: 2px solid var(--backgroundMain);
+    color: var(--backgroundMain);
+}
+
+.banner-text h3 {
+    color: var(--mainColor);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+}
+
+.banner-text p {
+    color: var(--pColor);
+    padding: 20px 0;
+}
+
+
+/* end of header css --------------------- */
+
+/* .about{
+   
+} */
+.about-main {
+    padding: 150px;
+    background: #FFF8F3;
+    margin: 100px 0;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.about-main p {
+    color: var(--pColor);
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.about-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.about-info h3 {
+    color: var(--mainColor);
+    font-size: 16px;
+}
+
+/*------------------------ end of about section  ------------------------------- */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.section-desciption {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+    color: var(--pColor);
+}
+
+.skill-container {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow: 20px 20px 60px #dfdfdf,
+        -20px -20px 60px #ffffff;
+}
+
+.skill h3 {
+    margin: 15px 0;
+
+}
+
+.skill p {
+    color: var(--pColor);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* end of skill section ------------------------ */
+
+.resume-container {
+    padding: 50px 0;
+
+}
+
+.resume {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+}
+
+.resume-heading {
+    margin: 30px 0;
+}
+
+.education h3 {
+    color: var(--mainColor);
+}
+
+.education h4 {
+    color: var(--pColor);
+    margin: 10px 0;
+
+}
+
+.education p {
+    color: var(--pColor);
+    line-height: 1.5;
+    /* margin-bottom: 30px; */
+}
+
+.education hr {
+    margin: 30px 0;
+
+}
+
+.resume-dow-btn {
+    display: block;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+
+/* end of resume section ------------------------- */
+footer {
+    background-color: #FFF8F3;
+}
+
+.footer {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+
+.footer p {
+    color: var(--pColor);
+    line-height: 1.5;
+}
+
+.footer ul {
+    margin-top: 20px;
+}
+
+.footer img {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer input,
+.footer textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* footer  */
+
+
+.close {
+    position: absolute;
+    display: block;
+    align-items: center;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width:672px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    .profile-img{
+        width: 400px;
+        padding-left: 15px;
+    }
+    
+    .about-info{
+        flex-direction: column;
+       
+    }
+
+    .about-main{
+        padding: 0px;
+    }
+
+    .resume{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .footer{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .section-desciption{
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 673px) {
+
+    .about-info{
+        gap: 20px;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+}
